@@ -6,21 +6,19 @@ describe Benchmark::Ipsa do
 
     std, _ = capture_io {
       Benchmark.ipsa do |x|
-          x.report('foo 1'){
-            arr = ['1', 2]
-            sleep 0.1
-          }
-          x.report('foo 2'){
-            sleep 0.1
-          }
+        x.report('insert'){
+          arr = []
+          100_000.times do
+            arr << 'Love my memory'
+          end
+        }
+        x.report('nothing'){
+          sleep 0.001
+        }
       end
     }
 
-    puts std
-    std.lines.first(3).join.must_equal(<<-EOF)
-Allocations -------------------------------------
-               foo 1       2/0  alloc/ret        1/0  strings/ret
-               foo 2       0/0  alloc/ret        0/0  strings/ret
-    EOF
+    std.lines[1].must_match(/\d*\.\d* mb memory_cost/)
+    std.lines[2].must_match(/0.00 bytes memory_cost/)
   end
 end

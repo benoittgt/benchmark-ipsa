@@ -1,0 +1,41 @@
+# Logfile created on 2017-03-04 16:54:28 +0100 by logger.rb/47272
+[2017-03-04 16:54:28 +0100 OCTO-BTI.local (62885)] INFO : Starting the New Relic agent in "development" environment.
+[2017-03-04 16:54:28 +0100 OCTO-BTI.local (62885)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-03-04 16:54:28 +0100 OCTO-BTI.local (62885)] WARN : No configuration file found. Working directory = /Users/bti/code/benchmark-ipsa
+[2017-03-04 16:54:28 +0100 OCTO-BTI.local (62885)] WARN : Looked in these locations (based on defaults): /Users/bti/code/benchmark-ipsa/config/newrelic.yml, /Users/bti/code/benchmark-ipsa/newrelic.yml, /Users/bti/code/benchmark-ipsa/config/newrelic.yml, /Users/bti/code/benchmark-ipsa/newrelic.yml, /Users/bti/.newrelic/newrelic.yml, /Users/bti/newrelic.yml
+[2017-03-04 16:54:28 +0100 OCTO-BTI.local (62885)] INFO : Environment: development
+[2017-03-04 16:54:28 +0100 OCTO-BTI.local (62885)] INFO : No known dispatcher detected.
+[2017-03-04 16:54:28 +0100 OCTO-BTI.local (62885)] INFO : Application: development
+[2017-03-04 16:54:28 +0100 OCTO-BTI.local (62885)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-03-04 16:54:28 +0100 OCTO-BTI.local (62885)] INFO : Installing Net instrumentation
+[2017-03-04 16:54:28 +0100 OCTO-BTI.local (62885)] INFO : Finished instrumentation
+[2017-03-04 16:54:50 +0100 OCTO-BTI.local (62946)] INFO : Starting the New Relic agent in "development" environment.
+[2017-03-04 16:54:50 +0100 OCTO-BTI.local (62946)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-03-04 16:54:50 +0100 OCTO-BTI.local (62946)] WARN : No configuration file found. Working directory = /Users/bti/code/benchmark-ipsa
+[2017-03-04 16:54:50 +0100 OCTO-BTI.local (62946)] WARN : Looked in these locations (based on defaults): /Users/bti/code/benchmark-ipsa/config/newrelic.yml, /Users/bti/code/benchmark-ipsa/newrelic.yml, /Users/bti/code/benchmark-ipsa/config/newrelic.yml, /Users/bti/code/benchmark-ipsa/newrelic.yml, /Users/bti/.newrelic/newrelic.yml, /Users/bti/newrelic.yml
+[2017-03-04 16:54:50 +0100 OCTO-BTI.local (62946)] INFO : Environment: development
+[2017-03-04 16:54:50 +0100 OCTO-BTI.local (62946)] INFO : No known dispatcher detected.
+[2017-03-04 16:54:50 +0100 OCTO-BTI.local (62946)] INFO : Application: development
+[2017-03-04 16:54:50 +0100 OCTO-BTI.local (62946)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-03-04 16:54:50 +0100 OCTO-BTI.local (62946)] INFO : Installing Net instrumentation
+[2017-03-04 16:54:50 +0100 OCTO-BTI.local (62946)] INFO : Finished instrumentation
+[2017-03-04 16:56:49 +0100 OCTO-BTI.local (63158)] INFO : Starting the New Relic agent in "development" environment.
+[2017-03-04 16:56:49 +0100 OCTO-BTI.local (63158)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-03-04 16:56:49 +0100 OCTO-BTI.local (63158)] WARN : No configuration file found. Working directory = /Users/bti/code/benchmark-ipsa
+[2017-03-04 16:56:49 +0100 OCTO-BTI.local (63158)] WARN : Looked in these locations (based on defaults): /Users/bti/code/benchmark-ipsa/config/newrelic.yml, /Users/bti/code/benchmark-ipsa/newrelic.yml, /Users/bti/code/benchmark-ipsa/config/newrelic.yml, /Users/bti/code/benchmark-ipsa/newrelic.yml, /Users/bti/.newrelic/newrelic.yml, /Users/bti/newrelic.yml
+[2017-03-04 16:56:49 +0100 OCTO-BTI.local (63158)] INFO : Environment: development
+[2017-03-04 16:56:49 +0100 OCTO-BTI.local (63158)] INFO : No known dispatcher detected.
+[2017-03-04 16:56:49 +0100 OCTO-BTI.local (63158)] INFO : Application: development
+[2017-03-04 16:56:49 +0100 OCTO-BTI.local (63158)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-03-04 16:56:49 +0100 OCTO-BTI.local (63158)] INFO : Installing Net instrumentation
+[2017-03-04 16:56:49 +0100 OCTO-BTI.local (63158)] INFO : Finished instrumentation
+[2017-03-04 16:57:09 +0100 OCTO-BTI.local (63211)] INFO : Starting the New Relic agent in "development" environment.
+[2017-03-04 16:57:09 +0100 OCTO-BTI.local (63211)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-03-04 16:57:09 +0100 OCTO-BTI.local (63211)] WARN : No configuration file found. Working directory = /Users/bti/code/benchmark-ipsa
+[2017-03-04 16:57:09 +0100 OCTO-BTI.local (63211)] WARN : Looked in these locations (based on defaults): /Users/bti/code/benchmark-ipsa/config/newrelic.yml, /Users/bti/code/benchmark-ipsa/newrelic.yml, /Users/bti/code/benchmark-ipsa/config/newrelic.yml, /Users/bti/code/benchmark-ipsa/newrelic.yml, /Users/bti/.newrelic/newrelic.yml, /Users/bti/newrelic.yml
+[2017-03-04 16:57:09 +0100 OCTO-BTI.local (63211)] INFO : Environment: development
+[2017-03-04 16:57:09 +0100 OCTO-BTI.local (63211)] INFO : No known dispatcher detected.
+[2017-03-04 16:57:09 +0100 OCTO-BTI.local (63211)] INFO : Application: development
+[2017-03-04 16:57:09 +0100 OCTO-BTI.local (63211)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-03-04 16:57:09 +0100 OCTO-BTI.local (63211)] INFO : Installing Net instrumentation
+[2017-03-04 16:57:09 +0100 OCTO-BTI.local (63211)] INFO : Finished instrumentation

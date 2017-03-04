@@ -1,5 +1,5 @@
 require "benchmark/ipsa/version"
-require 'memory_profiler'
+require 'get_process_mem'
 require 'benchmark/ips'
 
 module Benchmark
@@ -7,21 +7,21 @@ module Benchmark
     def ipsa(*args, &block)
       Benchmark.ips(*args){ |x|
         block.call(x)
-        allocations(x)
+        memory(x)
       }
 
     end
 
-    def allocations(x)
-      return unless RUBY_VERSION >= "2.1.0" # MemoryProfiler needs 2.1. degrade to just ips
-
-      puts "Allocations -------------------------------------"
+    def memory(x)
+      puts "Memory -------------------------------------"
       x.list.each do |entry|
-        report = MemoryProfiler.report(&entry.action)
+        initial_memory_usage = GetProcessMem.new.bytes
+        entry.action.call
+        after_action_memory_usage = GetProcessMem.new.bytes
         $stdout.print(rjust(entry.label))
-        $stdout.printf("%10s  alloc/ret %10s  strings/ret\n",
-                       "#{report.total_allocated}/#{report.total_retained}",
-        "#{report.strings_allocated.count}/#{report.strings_retained.count}")
+        $stdout.printf(" %10s  mem_before/after %10s memory_cost\n",
+                       "#{human_size(initial_memory_usage)}/#{human_size(after_action_memory_usage)}",
+                       "#{human_size(after_action_memory_usage - initial_memory_usage)}")
       end
     end
 
@@ -34,7 +34,14 @@ module Benchmark
       end
     end
 
-    # Your code goes here...
+    def human_size(num, unit='bytes')
+      units = %w(bytes kb mb gb)
+      if num <= 1024
+        "#{"%0.2f"%num} #{unit}"
+      else
+        human_size(num/1024.0, units[units.index(unit)+1])
+      end
+    end
   end
   extend Ipsa
 end

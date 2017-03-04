@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Dotan Nahum"]
   spec.email         = ["jondotan@gmail.com"]
 
-  spec.summary       = %q{Benchmark IPS with allocations}
-  spec.description   = %q{Benchmark IPS with allocations}
+  spec.summary       = %q{Benchmark IPS with memory delta}
+  spec.description   = %q{Benchmark IPS with memory delta}
   spec.homepage      = "https://github.com/jondot/benchmark-ips"
   spec.license       = "MIT"
 
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency 'benchmark-ips', '~> 2.5.0'
-  spec.add_dependency 'memory_profiler', '~> 0.9.6'
+  spec.add_dependency 'get_process_mem', '~> 0.2.1'
 
   spec.add_development_dependency 'bundler', '~> 1.11'
   spec.add_development_dependency 'rake', '~> 10.0'
